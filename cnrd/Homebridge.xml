@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <Date>2016-12-20</Date>
+  <Beta>False</Beta>
+  <Category>HomeAutomation:HomeKit HomeAutomation:Apple</Category>
+  <Name>Homebridge</Name>
+  <Project>https://github.com/nfarina/homebridge</Project>
+  <Changes>
+    Initial docker template release.
+  </Changes>
+  <Overview>
+    HomeKit support for the impatient
+  </Overview>
+  <Description>
+    All credits for docker container goes to oznu (https://github.com/oznu/docker-homebridge).
+
+    Use the Github page for how to configure.
+  </Description>
+  <Registry>https://hub.docker.com/r/oznu/homebridge/</Registry>
+  <GitHub>https://github.com/oznu/docker-homebridge</GitHub>
+  <Repository>oznu/homebridge</Repository>
+  <Support>N/A</Support>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Networking>
+    <Mode>host</Mode>
+    <Publish/>
+  </Networking>
+  <Environment/>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/homebridge</HostDir>
+      <ContainerDir>/homebridge</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Banner></Banner>
+  <Icon>https://github.com/cnrd/docker-templates/blob/master/cnrd/images/homebridge.png?raw=true</Icon>
+</Containers>
